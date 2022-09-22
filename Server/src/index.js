@@ -5,8 +5,12 @@ app.use(cors());
 app.use(express.json());
 app.post("/api/users/:id/update", (req, res) => {
   setTimeout(() => {
-    console.log(req.body);
     res.send(req.body);
+  }, [2000]);
+});
+app.delete("/api/users/:id/delete", (req, res) => {
+  setTimeout(() => {
+    res.send("user deleted successfully");
   }, [2000]);
 });
 app.get("/", (req, res) => {

@@ -3,7 +3,13 @@ import Warning from "../warning/Warning";
 import "./update.css";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { update, remove, addHello, updateUser2 } from "../../redux/userSlice";
+import {
+  update,
+  remove,
+  addHello,
+  updateUser2,
+  deletUser2,
+} from "../../redux/userSlice";
 import { updateUser } from "../../redux/ApiCalls";
 export default function Update() {
   const [name, setName] = useState("");
@@ -19,6 +25,7 @@ export default function Update() {
   const handleDelete = async (e) => {
     e.preventDefault();
     // dispatch(remove());
+    dispatch(deletUser2({ name, email }));
   };
   // basically when i click on the Update button we will send these informations to our reducer
   // & they (name & email) will  be basically  our action payload

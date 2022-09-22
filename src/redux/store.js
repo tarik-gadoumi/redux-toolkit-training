@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./userSlice";
 export default configureStore({
   reducer: {
-    //1.the name of the store again (user) (WHAT I TRY TO LOOK for when using useSelector)
+    //1.the name of the store again (user)(WHAT I TRY TO LOOK for when using useSelector)
     user: userReducer,
   },
 });
