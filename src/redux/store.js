@@ -7,8 +7,8 @@ export default configureStore({
     user: userReducer,
   },
 });
-// 2. now we can import configureStore any where  to "reach the user info in our state on the `userSlice.initialStat`"
+// 2. Now we can import configureStore any where  to "reach the user info in our state on the `userSlice.initialStat`"
 // and also we will be able to react action (update)
 
-//3. so  to use the store wrap  the whole app in redux provider & pass the store so any component inside that provider
-//can acccess userSlice intialState as well as the  actions
+//3. So to use the store wrap  the whole app in redux provider & pass the store so any component inside that provider
+// can acccess userSlice intialState as well as the actions

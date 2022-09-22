@@ -72,6 +72,9 @@ export default function Update() {
               Update
             </button>
             {error && <span className="error"> Somthing went wrong !</span>}
+            {pending === false && (
+              <span className="success">Changes where made</span>
+            )}
           </form>
         </div>
       </div>
